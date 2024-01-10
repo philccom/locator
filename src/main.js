@@ -1,13 +1,14 @@
 import { createApp } from 'vue'
 import { createWebHistory, createRouter } from "vue-router";
 import './orbitron/stylesheet.css'
+import './roboto/stylesheet.css'
 import './style.css'
 import App from './App.vue'
 import Home from "./views/home/Index.vue";
 
 const routes = [
     {
-      path: "/",
+      path: "/locator",
       name: "Home",
       component: Home,
     },

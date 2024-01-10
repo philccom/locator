@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Orbitron, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Orbitron, Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -97,8 +97,8 @@ button:focus-visible {
   max-height: 500px;
 }
 
-.font-inter {
-  font-family: Inter;
+.font-roboto {
+  font-family: Roboto;
 }
 
 /* .leaflet-marker-icon {
@@ -120,6 +120,7 @@ button:focus-visible {
   width: max-content !important;
   background-color: #263039;
   color: white;
+  font-family: roboto !important;
 }
 
 .leaflet-popup-tip {

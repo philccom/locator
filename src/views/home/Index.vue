@@ -46,7 +46,7 @@
                                         <P class="font-bold">{{ item.fields.codename }}</P>
                                     </div>
                                     <div class="flex items-center space-x-3 mb-1">
-                                        <P class="font-bold font-inter uppercase text-base">{{ item.fields.fullname }}</P>
+                                        <P class="font-bold font-roboto uppercase text-base">{{ item.fields.fullname }}</P>
                                     </div>
                                     <div class="space-y-1 sub-details">
                                         <div class="flex items-center space-x-3">
