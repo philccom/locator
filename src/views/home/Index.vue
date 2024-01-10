@@ -89,7 +89,7 @@
                                 <l-icon
                                         :icon-size="[29, 41]"
                                         :icon-anchor="[17, 37]"
-                                        icon-url="/map-pin.png" >
+                                        icon-url="/locator/map-pin.png" >
                                 </l-icon>
                             </l-marker>
                         </l-map>
