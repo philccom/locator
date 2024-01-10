@@ -1,6 +1,6 @@
 <template>
     <user-layout>
-        <section class="w-full h-[50vh] bg-black relative">
+        <section class="w-full h-[30dvh] lg:h-[50dvh] bg-black relative">
             <img class="w-full h-full object-cover" src="/src/assets/images/radar.jpg" alt="banner">
             <div class="absolute w-full h-full top-0 left-0 flex flex-col justify-end">
                 <div class="max-w-[1366px] px-4 py-10 lg:p-20 m-auto w-full">
@@ -86,8 +86,14 @@
                                         <p><span class="font-bold text-sm">Numerical:</span> <span class="uppercase">{{ item.fields.numerical }}</span></p>
                                     </div>
                                 </l-popup>
+                                <l-icon
+                                        :icon-size="[29, 41]"
+                                        :icon-anchor="[17, 37]"
+                                        icon-url="src/assets/images/map-pin.png" >
+                                </l-icon>
                             </l-marker>
                         </l-map>
+                        
                         <button @click="initMap()" class="absolute top-4 right-4 z-10 focus:outline-0 hover:outline-0 hover:border-transparent hover:bg-primary-yellow hover:text-black">
                             RESET
                         </button>
@@ -102,7 +108,7 @@ import { ref, computed, onMounted } from 'vue';
 import axios from 'axios';
 import UserLayout from '../../components/layouts/UserLayout.vue';
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "@vue-leaflet/vue-leaflet";
 
 const search = ref('');
 const initLng = ref<any>(14.571411829543315);
