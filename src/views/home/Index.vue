@@ -89,7 +89,7 @@
                                 <l-icon
                                         :icon-size="[29, 41]"
                                         :icon-anchor="[17, 37]"
-                                        icon-url="/map-pin.png" >
+                                        icon-url="/locator/map-pin.png" >
                                 </l-icon>
                             </l-marker>
                         </l-map>
@@ -149,7 +149,6 @@ const fetchMember = () => {
       .get('https://cdn.contentful.com/spaces/2l0neqyu5hf2/environments/master/entries?limit=300&access_token=rlrBFHXIo8oJekURHa7jN0svYCFaW6VP7uIswAuui0A')
       .then((response) => {
         members.value = response.data.items;
-        console.log(members.value.length);
       })
 }
 
