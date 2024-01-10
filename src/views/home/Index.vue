@@ -116,68 +116,18 @@ const initLat = ref<any>(121.01092453822817);
 const activePersonnel = ref('');
 const members = ref<any>([]);
 const zoom = ref(12);
-const list = ref([
-    {
-        id:  '1',
-        fullname: 'John Dennis Bernardo',
-        callsign: 'DW3JUB',
-        codename: 'WARSHOCK',
-        numerical: '0123',
-        location: 'Marilao, Bulacan',
-        lng: '14.780508358829406',
-        lat: '120.98421976824208'
-    },
-    // {
-    //     id:  '2',
-    //     fullname: 'John Dennis Bernardo',
-    //     callsign: 'DW3JUB',
-    //     codename: 'WARSHOCK',
-    //     numerical: '0123',
-    //     location: 'Marilao, Bulacan',
-    //     lng: '14.780508358829406',
-    //     lat: '120.98421976824208'
-    // },
-    // {
-    //     id:  '3',
-    //     fullname: 'John Dennis Bernardo',
-    //     callsign: 'DW3JUB',
-    //     codename: 'WARSHOCK',
-    //     numerical: '0123',
-    //     location: 'Marilao, Bulacan',
-    //     lng: '14.780508358829406',
-    //     lat: '120.98421976824208'
-    // },
-    // {
-    //     id:  '4',
-    //     fullname: 'John Dennis Bernardo',
-    //     callsign: 'DW3JUB',
-    //     codename: 'WARSHOCK',
-    //     numerical: '0123',
-    //     location: 'Marilao, Bulacan',
-    //     lng: '14.780508358829406',
-    //     lat: '120.98421976824208'
-    // },
-    // {
-    //     id:  '5',
-    //     fullname: 'John Dennis Bernardo',
-    //     callsign: 'DW3JUB',
-    //     codename: 'WARSHOCK',
-    //     numerical: '0123',
-    //     location: 'Marilao, Bulacan',
-    //     lng: '14.780508358829406',
-    //     lat: '120.98421976824208'
-    // },
-    // {
-    //     id:  '6',
-    //     fullname: 'John Dennis Bernardo',
-    //     callsign: 'DW3JUB',
-    //     codename: 'WARSHOCK',
-    //     numerical: '0123',
-    //     location: 'Marilao, Bulacan',
-    //     lng: '14.780508358829406',
-    //     lat: '120.98421976824208'
-    // },
-])
+// const list = ref([
+//     {
+//         id:  '1',
+//         fullname: 'John Dennis Bernardo',
+//         callsign: 'DW3JUB',
+//         codename: 'WARSHOCK',
+//         numerical: '0123',
+//         location: 'Marilao, Bulacan',
+//         lng: '14.780508358829406',
+//         lat: '120.98421976824208'
+//     },
+// ])
 
 const initMap = () => {
     zoom.value = 11;
@@ -199,7 +149,6 @@ const fetchMember = () => {
       .get('https://cdn.contentful.com/spaces/2l0neqyu5hf2/environments/master/entries?access_token=rlrBFHXIo8oJekURHa7jN0svYCFaW6VP7uIswAuui0A')
       .then((response) => {
         members.value = response.data.items;
-        console.log(members.value);
       })
 }
 
