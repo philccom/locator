@@ -45,9 +45,9 @@
                                         <p>Codename:</p>
                                         <P class="font-bold">{{ item.fields.codename }}</P>
                                     </div>
-                                    <div class="flex items-center space-x-3 mb-1">
+                                    <!-- <div class="flex items-center space-x-3 mb-1">
                                         <P class="font-bold font-roboto uppercase text-base">{{ item.fields.fullname }}</P>
-                                    </div>
+                                    </div> -->
                                     <div class="space-y-1 sub-details">
                                         <div class="flex items-center space-x-3">
                                             <p>NTC Callsign:</p>
@@ -78,7 +78,7 @@
                             ></l-tile-layer>
                             <l-marker v-for="item, i in members" :key="i" :lat-lng="[item.fields.lng, item.fields.lat]">
                                 <l-popup>
-                                    <p><span class="uppercase font-bold text-sm">{{ item.fields.fullname }}</span></p>
+                                    <!-- <p><span class="uppercase font-bold text-sm">{{ item.fields.fullname }}</span></p> -->
                                     <p class="font-bold text-xs">{{ item.fields.location }}</p>
                                     <div class="mt-4 bg-neutral-100 text-black p-2">
                                         <p><span class="font-bold text-sm">Codename:</span> <span class="uppercase">{{ item.fields.codename }}</span></p>
